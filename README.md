@@ -1,5 +1,11 @@
 
 # Harden SSL & TLS Windows
+## Description:
+A one click solution to harden SSL/TLS connections on a Windows Host by removing SSLv3, and the vulnerable RC4, and 3DES cipher,
+A useful tool to pass to Engineers to take the complexity out of adhering to Security standards.
+
+
+
 Author: _Shane Keels_
 #### Requirements
 * a Windows Host
