@@ -1,19 +1,25 @@
 
 # Harden SSL & TLS Windows
 ## Description:
-A one click solution to harden SSL/TLS connections on a Windows Host by removing SSLv3, and the vulnerable RC4, and 3DES cipher,
+An EASY one click solution to harden SSL/TLS connections on a Windows Server by removing SSLv3, and the vulnerable RC4, and 3DES cipher,
 A useful tool to pass to Engineers to take the complexity out of adhering to Security standards.
 
 
 
 Author: _Shane Keels_
 #### Requirements
-* a Windows Host
+* a Windows Server
 * a user account with Administrative permissions
+
+## HOWTO: Usage
+* download `harden_ssl_tls_connection.reg`
+* place anywhere on vulernable host machine
+* double click the file to execute
+* **DONE!**
 
 
 ## Before
-Executing a standard SSL script to detect ciphers on a target host
+Executing a standard nMap SSL script to detect ciphers on a target host
 
 `KeelsBox:~ shanekeels$ nmap --script ssl-enum-ciphers -p 443 <vulnerable_host>`
 
@@ -107,11 +113,10 @@ PORT    STATE SERVICE
 Nmap done: 1 IP address (1 host up) scanned in 8.41 seconds
 ```
 
-## Harden Target Destination
-Place the `harden_ssl_tls_connection.reg` on the target host, and execute the file
+
 
 ## After
-The output of the same script executed after removing SSLv3, 3DES and RC4
+The output of the same nMap script after executing `harden_ssl_tls_connection.reg`
 
 `KeelsBox:~ shanekeels$ nmap --script ssl-enum-ciphers -p 443 <vulnerable_host>`
 
