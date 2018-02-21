@@ -1,7 +1,7 @@
 
 # Harden SSL & TLS Windows
 ## Description:
-An EASY one click solution to harden SSL/TLS connections on a Windows Server by removing SSLv3, and the vulnerable RC4, and 3DES cipher,
+An EASY one click solution to harden SSL/TLS connections on a Windows Server by removing SSLv3, TLS 1.0 cipher suites and the vulnerable RC4, and 3DES cipher,
 A useful tool to pass to Engineers to take the complexity out of adhering to Security standards.
 
 
