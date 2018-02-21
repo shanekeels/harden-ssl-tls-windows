@@ -127,19 +127,6 @@ Host is up (0.055s latency).
 PORT    STATE SERVICE
 443/tcp open  https
 | ssl-enum-ciphers:
-|   TLSv1.0:
-|     ciphers:
-|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
-|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A
-|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA (dh 1024) - A
-|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 1024) - A
-|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
-|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
-|     compressors:
-|       NULL
-|     cipher preference: server
-|     warnings:
-|       Key exchange (dh 1024) of lower strength than certificate key
 |   TLSv1.1:
 |     ciphers:
 |       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
